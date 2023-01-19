@@ -62,18 +62,6 @@ public class GetRequest extends Restful {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
     }
 
 }

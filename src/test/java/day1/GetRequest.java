@@ -1,15 +1,14 @@
 package day1;
 
-import base_url.Restful;
+import base_url.RestfulBaseUrl;
 import io.restassured.http.ContentType;
-import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
 
-public class GetRequest extends Restful {
+public class GetRequest extends RestfulBaseUrl {
 
         /*
     Given

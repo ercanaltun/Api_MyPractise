@@ -1,4 +1,4 @@
-package day1;
+package getRequests;
 
 import base_url.RestfulBaseUrl;
 import io.restassured.response.Response;

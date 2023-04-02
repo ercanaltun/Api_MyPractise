@@ -1,8 +1,7 @@
-package day1;
+package getRequests;
 
 import base_url.ReqresBaseUrl;
 import io.restassured.response.Response;
-import org.junit.Assert;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.given;

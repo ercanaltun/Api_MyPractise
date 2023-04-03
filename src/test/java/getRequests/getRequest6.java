@@ -11,7 +11,7 @@ import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-public class getRequests6 extends JsonplaceholderBaseUrl {
+public class getRequest6 extends JsonplaceholderBaseUrl {
 
 
     /*

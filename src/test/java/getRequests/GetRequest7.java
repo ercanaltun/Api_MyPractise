@@ -38,10 +38,12 @@ public class GetRequest7 extends RestfulBaseUrl {
         //First Step:Set the Url
         spec.pathParams("first","booking","second",91);
 
+
         //Second Step:Set The Expected Data(Payload)
         Map<String,String> bookingdatesMap=new HashMap<>();
         bookingdatesMap.put("checkin","2013-02-23");
         bookingdatesMap.put("checkout","2014-10-23");
+
 
         Map<String,Object> expectedData=new HashMap<>();
         expectedData.put("firstname","Sally");
@@ -52,9 +54,11 @@ public class GetRequest7 extends RestfulBaseUrl {
         expectedData.put("additionalneeds","Breakfast");
         System.out.println("expectedData = " + expectedData);
 
+
         //Third Step:Send The Request and Get The Response
         Response response=given().spec(spec).when().get("/{first}/{second}");
         response.prettyPrint();
+
 
         //Fourth Step:Do Assertion
         Map<String,Object>actualData=response.as(HashMap.class);
@@ -65,9 +69,19 @@ public class GetRequest7 extends RestfulBaseUrl {
         assertEquals(expectedData.get("additionalneeds"),actualData.get("additionalneeds"));
         assertEquals(bookingdatesMap.get("checkin"),((Map)(actualData.get("bookingdates"))).get("checkin"));
         assertEquals(bookingdatesMap.get("checkout"),((Map)(actualData.get("bookingdates"))).get("checkout"));
+
         //Key-Value ikilileri String-Object şeklinde olduğundan,
         // Bookingdata value kısmını casting ile Map yaptık.
 
 
+
+
+
+
+
+
     }
+
+
+
 }

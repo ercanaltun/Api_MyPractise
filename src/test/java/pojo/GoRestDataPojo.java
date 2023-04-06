@@ -1,4 +1,4 @@
-package pojos;
+package pojo;
 
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 
@@ -75,6 +75,9 @@ public class GoRestDataPojo {
                 ", status='" + status + '\'' +
 
                 '}';
+
+
+
     }
 
 

@@ -8,7 +8,7 @@ import pojo.GoRestPojo;
 
 
 import static io.restassured.RestAssured.given;
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 public class GetRequestPojo2 extends GoRestBaseUrl {
 
@@ -65,7 +65,10 @@ public class GetRequestPojo2 extends GoRestBaseUrl {
 
 
 
+
+
     }
+
 
 
 }

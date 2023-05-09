@@ -12,5 +12,15 @@ public class Petstore_SwaggerBaseUrl {
     public void setup() {
         spec = new RequestSpecBuilder().setBaseUri("https://petstore.swagger.io/v2").build();
 
+
+
+
+
+
+
+
     }
+
+
+
 }
